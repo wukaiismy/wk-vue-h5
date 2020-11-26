@@ -1,0 +1,14 @@
+$maxWidth: 540px;
+@mixin MaxWidth {
+    @media screen and (min-width: 540px) {
+        @content;
+    }
+}
+
+@mixin MaxWidth-center {
+    @media screen and (min-width: 540px) {
+        max-width: $maxWidth;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
